@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Secret Love Message</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0f0f0f;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #ff007f;
+      text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f;
+      margin-bottom: 20px;
+    }
+
+    .elements {
+      font-size: 1.5em;
+      margin-bottom: 30px;
+    }
+
+    .element {
+      display: inline-block;
+      margin: 5px;
+      padding: 10px 14px;
+      background: #1f1f1f;
+      border: 2px solid #ff66a3;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #ff66a3;
+      transition: all 0.3s ease;
+    }
+
+    .reveal-btn {
+      padding: 12px 24px;
+      font-size: 1em;
+      background: #ff007f;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #ff007f;
+      transition: background 0.3s;
+    }
+
+    .reveal-btn:hover {
+      background: #ff3399;
+    }
+
+    .message {
+      display: none;
+      margin-top: 20px;
+      font-size: 2em;
+      color: #00ffcc;
+      text-shadow: 0 0 10px #00ffc3, 0 0 30px #00ffc3;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1>A Secret Just for You 💖</h1>
+
+  <div class="elements">
+    <span class="element">Iodine</span>
+    <span class="element">Lutetium</span>
+    <span class="element">Vanadium</span>
+    <span class="element">Yttrium</span>
+    <span class="element">Oxygen</span>
+    <span class="element">Uranium</span>
+    <span class="element">Fluorine</span>
+    <span class="element">Oxygen</span>
+    <span class="element">Rhenium</span>
+    <span class="element">Vanadium</span>
+    <span class="element">Erbium</span>
+  </div>
+
+  <button class="reveal-btn" onclick="revealLove()">Click to Reveal 💌</button>
+
+  <div class="message" id="secretMessage">
+    I LOVE YOU FOREVER ❤️
+  </div>
+
+  <div class="footer">Made with ❤️ by someone who loves you</div>
+
+  <script>
+    function revealLove() {
+      document.getElementById('secretMessage').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
